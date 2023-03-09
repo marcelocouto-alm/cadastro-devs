@@ -1,0 +1,472 @@
+.container-signup {
+  background-color: #4e9fe1;
+  background-image: linear-gradient(64deg, #4e9fe1 0%, #7e34ba 100%);
+  height: auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-signup {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 800px;
+  margin: 10px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.content-signup h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #E4E4E4;
+}
+
+.content-signup h5 {
+  font-size: 18px;
+  color: #E4E4E4;
+}
+
+.content-signup input {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+.content-signup input::placeholder {
+  font-weight: bold;
+}
+
+.content-signup input:focus {
+  color: black;
+  font-weight: bold;
+}
+
+.content-signup p {
+  display: flex;
+  align-self: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.login-input-signup {
+  border-bottom: 1px solid #e5e5e5;
+  width: 500px;
+}
+
+.login-input-signup input {
+  width: 480px;
+  margin-bottom: 15px;
+  background-color: #e5e5e5;
+}
+
+.specialty-signup {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.specialty-content-signup {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.specialty-content-signup p {
+  font-size: 16px;
+}
+
+.specialty-input-signup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.specialty-input-signup input[type="radio"] {
+  margin: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.specialty-input-signup label {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.technologies-signup {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.techs-content-signup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-items: start;
+  margin-left: 20px;
+}
+
+.techs-content-signup input[type="checkbox"] {
+  margin: 0;
+  width: auto;
+}
+
+.tech-signup {
+  font-size: 16px;
+}
+
+.seniority-signup {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.seniority-content-signup {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.seniority-content-signup p {
+  font-size: 16px;
+}
+
+.seniority-input-signup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seniority-input-signup input[type="radio"] {
+  margin: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.seniority-input-signup label {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.content-signup .error-signup {
+  color: red;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.content-signup button {
+  width: 100%;
+  padding: 10px;
+  max-width: 350px;
+  background-color: #00baf8;
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: #E4E4E4;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-signup {
+  text-decoration: none;
+  color: #E4E4E4;
+}
+
+/* Media query */
+
+@media (max-width: 900px) {
+  .content-signup {
+    width: 550px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-signup {
+    width: 500px;
+    padding-right: 15px;
+  }
+
+  .login-input-signup {
+    width: 450px;
+  }
+
+  .login-input-signup input {
+    width: 430px;
+  }
+
+  .specialty-signup {
+    width: 450px;
+  }
+
+  .technologies-signup {
+    width: 450px;
+  }
+
+  .techs-content-signup {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 80px;
+  }
+
+  .seniority-signup {
+    width: 450px;
+  }
+}
+
+@media (max-width: 525px) {
+  .content-signup {
+    width: 400px;
+    padding-right: 15px;
+  }
+
+  .login-input-signup {
+    width: 350px;
+  }
+
+  .login-input-signup input {
+    width: 330px;
+  }
+
+  .specialty-signup {
+    width: 350px;
+  }
+
+  .technologies-signup {
+    width: 350px;
+  }
+
+  .techs-content-signup {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 80px;
+  }
+
+  .seniority-signup {
+    width: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content-signup {
+    width: 350px;
+    padding-right: 15px;
+  }
+
+  .content-signup h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-signup h5 {
+    font-size: 1rem;
+  }
+
+  .content-signup p {
+    font-size: .8rem;
+  }
+
+  .login-input-signup {
+    width: 300px;
+  }
+
+  .login-input-signup input {
+    width: 280px;
+  }
+
+  .specialty-signup {
+    width: 300px;
+  }
+
+  .specialty-content-signup {
+    gap: 12px;
+  }
+
+  .specialty-input-signup input[type="radio"] {
+    margin: 0;
+    width: 13px;
+    height: 13px;
+  }
+
+  .technologies-signup {
+    width: 300px;
+  }
+
+  .techs-content-signup {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 40px;
+  }
+
+  .tech-signup {
+    font-size: .8rem;
+  }
+
+  .seniority-signup {
+    width: 300px;
+    gap: 10px;
+  }
+
+  .seniority-content-signup {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .seniority-content-signup p {
+    font-size: .8rem;
+  }
+
+  .seniority-input-signup {
+    gap: 12px;
+  }
+
+  .seniority-input-signup input[type="radio"] {
+    margin: 0;
+    width: 13px;
+    height: 13px;
+  }
+
+  .content-signup button {
+    width: 100%;
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .link-signup {
+    font-size: .8rem;
+  }
+
+  .label-signin {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .content-signup {
+    width: 290px;
+    padding-right: 15px;
+  }
+
+  .content-signup h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-signup h5 {
+    font-size: 1rem;
+  }
+
+  .content-signup p {
+    font-size: .8rem;
+  }
+
+  .login-input-signup {
+    width: 240px;
+  }
+
+  .login-input-signup input {
+    width: 220px;
+  }
+
+  .specialty-signup {
+    width: 240px;
+  }
+
+  .specialty-content-signup {
+    gap: 12px;
+  }
+
+  .specialty-input-signup input[type="radio"] {
+    margin: 0;
+    width: 10px;
+    height: 10px;
+  }
+
+  .technologies-signup {
+    width: 240px;
+  }
+
+  .techs-content-signup {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 40px;
+  }
+
+  .tech-signup {
+    font-size: .8rem;
+  }
+
+  .seniority-signup {
+    width: 240px;
+    gap: 10px;
+  }
+
+  .seniority-content-signup {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .seniority-content-signup p {
+    font-size: .8rem;
+  }
+
+  .seniority-input-signup {
+    gap: 12px;
+  }
+
+  .seniority-input-signup input[type="radio"] {
+    margin: 0;
+    width: 10px;
+    height: 10px;
+  }
+
+  .content-signup button {
+    width: 100%;
+    padding: 10px;
+    max-width: 240px;
+  }
+
+  .link-signup {
+    font-size: .8rem;
+  }
+
+  .label-signin {
+    font-size: .8rem;
+  }
+}
